@@ -1,5 +1,5 @@
-# SegmentalDTW
-Author: Huaze (Patrick) Liu
+# DTW with Confidence Interval
+Author: Huaze (Patrick) Liu, Hamza Jamal, Jeremy Kim, Javier Perez
 
 Date: May 2024
 
