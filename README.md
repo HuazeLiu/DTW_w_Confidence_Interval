@@ -1,23 +1,18 @@
 # SegmentalDTW
+Author: Huaze (Patrick) Liu
 
-This repository contains the code for the ICASSP 2021 paper "Segmental DTW: A Parallelizable Alternative to Dynamic Time Warping."
+Date: May 2024
 
-The goal of this project is to globally align two feature sequences with a parallelizable algorithm.
+Upload Date: June 2024
 
-You can find the paper [here](https://drive.google.com/file/d/19WMEP3cayMQnnywa1eufTnukTrEK4ec5/view?usp=sharing).
+This is the final project for ENGR207 HM -- Digital Signal Processing
 
-Simply clone the virtual environment and run the jupyter notebooks in order.  Because the second notebook takes a long time to run, you can also run it from the command line with:
+## Overview
+This repository contains the implementation and analysis of Dynamic Time Warping (DTW) with Confidence Intervals, where we explored methodologies to measure the reliability of alignment intervals within the DTW framework. The project introduces novel metrics and visualizations for evaluating the alignment confidence across the DTW path, focusing on specific areas where two signals match or diverge.
 
-`jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.enabled=True --ExecutePreprocessor.timeout=-1 02_Align.ipynb`
-
-
-## Citation
-
-TJ Tsai. "Segmental DTW: A Parallelizable Alternative to Dynamic Time Warping" in Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2021, pp. 106-110.
-
-
-
-
-### Acknowledgments
-
-This material is based upon work supported by the National Science Foundation under Grant No. 1948531.  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+## Features
+ - Dynamic Time Warping (DTW): Utilizes dynamic programming to align two segments of time series data with varying speeds.
+ - Confidence Intervals: Implements techniques to measure the confidence of alignments at specific points along the DTW path.
+ - Valley Width Analysis: Introduces the concept of "Valley Width" in the cost matrix to evaluate alignment sensitivity.
+ - Sliding Window Comparison: Compares segments of the DTW path using FlexDTW to assess alignment accuracy.
+ - Dynamic Programming: Utilized to compute the pairwise cost matrix and find the optimal alignment path in DTW.
